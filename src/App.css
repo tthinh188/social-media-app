@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+}
+
+.app {
+  background-color: #fafafa;
+  /* padding: 20px; */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* overflow-x: hidden; */
+}
+.app_header{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  background-color: white;
+  object-fit: contain;
+  padding: 10px 0;
+  border-bottom: 1px solid lightgray;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.app_headerLogo {
+  margin-left: 20px;
+  margin-top: 5px;
+  background-image: linear-gradient(45deg, black, crimson);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  animation: App-logo-animation infinite 3s;
+  cursor: default;
+}
+
+@keyframes App-logo-animation {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    opacity: 0;
+  }
+
+  1000% {
+    opacity: 1;
+  }
+}
+
+.app_modalLogo{
+  background-image: linear-gradient(45deg, black, crimson);
+  background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  -moz-text-fill-color: transparent;
+  cursor: default;
+}
+
+.app_signup {
+  display: flex;
+  flex-direction: column;
+}
+
+.app_signup input {
+  outline-width: 0;
+}
+
+.app_error {
+  margin: 20px 0;
+  color: crimson;
+  font-weight: 600;
+
+}
+
+.choice_button {
+  margin: auto;
+}
+
+.app_signUpSuccess{
+  color: limegreen;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.app_posts {
+  padding: 20px;
+}
